@@ -1,0 +1,5 @@
+g.region -gf
+# projection=1
+# zone=15
+# n=5472435 s=4812867.23583161 w=188544 e=763445 nsres=0.99999964 ewres=1 rows=659568 cols=574901 cells=379186302768
+r.tile input=MinnesotaLiDAR output=MN_lidar_tile_ width=2000 height=2000 overlap=50
