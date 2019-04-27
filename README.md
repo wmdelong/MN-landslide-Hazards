@@ -13,9 +13,19 @@ This script moves all tiles with data to a master ESRI geodatabase (necessary be
 This script pulls DEM tiles from the geodatabase containing all DEM tiles and writes relevant tiles to area of interest (AOI) 		geodatabases.
 
 -DEM_Processing.py 
-This script uses the arcpy module to create the five products (Hillshade with 45* and 315* azimuth, aspect, slope, standard, planform, ___ curvature) for each AOI. 
+This script uses the arcpy module to create the five products (Hillshade with 45* and 315* azimuth, aspect, slope, standard, planform, profile curvatures) for each AOI. 
 
--
+-Open_to_AOIGDB.py
+This script moves topographic openness rasters from GDB containing all tiles to AOI GDBs.
+
+-Resample.py
+This script resamples a raster; in this case used to resample from 1m x 0.9999 m to 1 m x 1 m. 
+
+CopyRaster_32.py
+This script copies a given raster to 32 bit float data type. 
+
+Openness_modelbuilder.py
+This script is the automated python output of ArcGIS model to calculate topographic openness using SAGA GIS module.
 
 -GIS_Data_UserGuide.pdf
 	This workflow was created and distributed to other members of the project as a guide for downloading, preparing, and using all 
